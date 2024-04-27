@@ -1,4 +1,4 @@
-// used/copied from https://codeforgeek.com/express-nodejs-tutorial/ and modified w/ course video
+// copied from https://codeforgeek.com/express-nodejs-tutorial/ and modified using course video
 
 const express = require('express');
 const app = express();
