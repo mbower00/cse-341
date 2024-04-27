@@ -1,10 +1,12 @@
-// copied from https://codeforgeek.com/express-nodejs-tutorial/
+// used/copied from https://codeforgeek.com/express-nodejs-tutorial/ and modified w/ course video
+
 const express = require('express');
 const app = express();
+const lesson1Controller = require("./controllers/lesson1")
  
-app.get('/', (req, res) => {
-  res.send("Alex Bower");
-});
+app.get('/', lesson1Controller.alexRoute)
+app.get('/jada', lesson1Controller.jadaRoute)
+app.get('/jonas', lesson1Controller.jonasRoute)
 
 const port = 3000
  
