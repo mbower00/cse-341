@@ -1,4 +1,4 @@
-// made using the course video
+// made using code from the course video (https://www.youtube.com/watch?v=K00J87SofEc)
 
 const alexRoute = (req, res) => {
     res.send("Alex Bower")
