@@ -1,8 +1,12 @@
-// made using code from 
+// made using code from:
 //  the course video (https://www.youtube.com/watch?v=K00J87SofEc)
 //  https://www.coderrocketfuel.com/article/store-mongodb-credentials-as-environment-variables-in-nodejs
 //  https://stackoverflow.com/questions/58354629/moving-nodejs-mongodb-connection-code-to-another-file
 //  https://www.mongodb.com/blog/post/quick-start-nodejs-mongodb-how-to-get-connected-to-your-database
+//  https://www.mongodb.com/developer/languages/javascript/node-crud-tutorial/
+
+// https://www.mongodb.com/docs/manual/reference/method/db.collection.find/
+// https://www.mongodb.com/docs/manual/reference/method/cursor.toArray/
 
 
 const { MongoClient } = require('mongodb');
