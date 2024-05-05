@@ -6,4 +6,8 @@ const lesson1Controller = require('../controllers/lesson1')
 routes.get('/', lesson1Controller.alexRoute)
 routes.get('/jada', lesson1Controller.jadaRoute)
 routes.get('/jonas', lesson1Controller.jonasRoute)
+
+const addContactsRoutes = require('./contacts')
+addContactsRoutes(routes)
+
 module.exports = routes
