@@ -28,11 +28,7 @@ const contactRoute = async (req, res) => {
 
     const data = await client.db('cse-341').collection('contacts').findOne({_id: new mongo.ObjectId(req.query.id)})
 
-    if (data) {
-        res.send(data)
-    } else {
-        res.send('NO CONTACT FOUND')
-    }
+    res.send(data)
     
     await client.close()
 }
