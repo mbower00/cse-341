@@ -1,6 +1,6 @@
 # used code from: https://www.youtube.com/watch?v=RcxvrhQKv8I
 
-get http://localhost:3000/
+get http://localhost:3000
 
 ###
 
@@ -17,6 +17,10 @@ get http://localhost:3000/contact?id=663449efad1fb75de083cb9c
 ###
 
 get http://localhost:3000/contact?id=663448c6ad1fb75de083cb9b
+
+###
+
+get https://cse-341-71jw.onrender.com
 
 ###
 
