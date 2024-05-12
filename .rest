@@ -64,3 +64,30 @@ Content-Type: application/json
 
 delete http://localhost:3000/delete-contact/66401f25f1646df3d3426d07
 Content-Type: application/json
+
+### 
+
+post https://cse-341-71jw.onrender.com/post-contact
+Content-Type: application/json
+
+{
+    "birthday": "02/13/2000",
+    "email": "mitchell@bowermail.net",
+    "favoriteColor": "Yellow",
+    "firstName": "Mitchell",
+    "lastName": "Bower"
+}
+
+###
+
+put https://cse-341-71jw.onrender.com/contacts/66401f25f1646df3d3426d07
+Content-Type: application/json
+
+{
+    "email": "mitchbbower@gmail.com"
+}
+
+###
+
+delete https://cse-341-71jw.onrender.com/delete-contact/66401f25f1646df3d3426d07
+Content-Type: application/json
