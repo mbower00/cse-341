@@ -37,3 +37,30 @@ get https://cse-341-71jw.onrender.com/contact?id=663449efad1fb75de083cb9c
 ###
 
 get https://cse-341-71jw.onrender.com/contact?id=663448c6ad1fb75de083cb9b
+
+### 
+
+post http://localhost:3000/post-contact
+Content-Type: application/json
+
+{
+    "birthday": "02/13/2000",
+    "email": "mitchell@bowermail.net",
+    "favoriteColor": "Yellow",
+    "firstName": "Mitchell",
+    "lastName": "Bower"
+}
+
+###
+
+put http://localhost:3000/contacts/66401f25f1646df3d3426d07
+Content-Type: application/json
+
+{
+    "email": "mitchbbower@gmail.com"
+}
+
+###
+
+delete http://localhost:3000/delete-contact/66401f25f1646df3d3426d07
+Content-Type: application/json
