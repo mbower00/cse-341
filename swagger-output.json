@@ -5,10 +5,10 @@
     "description": "This is a backend that connects to MongoDB where there is data on people.",
     "version": "1.0.0"
   },
-  "host": "https://cse-341-71jw.onrender.com",
+  "host": "cse-341-71jw.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/": {
