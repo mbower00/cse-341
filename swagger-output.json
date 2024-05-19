@@ -5,10 +5,10 @@
     "description": "This is a backend that connects to MongoDB where there is data on people.",
     "version": "1.0.0"
   },
-  "host": "cse-341-71jw.onrender.com",
+  "host": "localhost:3000",
   "basePath": "/",
   "schemes": [
-    "https"
+    "http"
   ],
   "paths": {
     "/": {
@@ -71,11 +71,20 @@
     "/post-contact": {
       "post": {
         "description": "Posts a new contacts according to the JSON data sent over. Gets the id of the newly created contact. (Note: you should allow the system to create an id).",
-        "parameters":{
-          "in":"body",
-          "name":"body",
-          "required": true
-        },
+        "parameters":[
+            {
+            "in":"body",
+            "name":"body",
+            "required": true,
+            "schema": {
+                "birthday": "02/13/2000",
+                "email": "mitchbbbbbower@gmail.com",
+                "favoriteColor": "Yellow",
+                "firstName": "Mitchell",
+                "lastName": "Bower"
+            }
+          }
+        ],
         "responses": {
           "201": {
             "description": "Created"
@@ -92,6 +101,18 @@
             "in": "path",
             "required": true,
             "type": "string"
+          },
+          {
+            "in":"body",
+            "name":"body",
+            "required": true,
+            "schema": {
+                "birthday": "02/13/2000",
+                "email": "mitchbbbbbower@gmail.com",
+                "favoriteColor": "Yellow",
+                "firstName": "Mitchell",
+                "lastName": "Bower"
+            }
           }
         ],
         "responses": {
