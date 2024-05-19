@@ -71,6 +71,11 @@
     "/post-contact": {
       "post": {
         "description": "Posts a new contacts according to the JSON data sent over. Gets the id of the newly created contact. (Note: you should allow the system to create an id).",
+        "parameters":{
+          "in":"body",
+          "name":"body",
+          "required": true
+        },
         "responses": {
           "201": {
             "description": "Created"
