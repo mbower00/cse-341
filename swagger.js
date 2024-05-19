@@ -7,7 +7,7 @@ const doc = {
     title: 'Contacts',
     description: 'This is a backend that connects to MongoDB where there is data on people.'
   },
-  host: 'localhost:3000'
+  host: 'https://cse-341-71jw.onrender.com'
 };
 
 const outputFile = './swagger-output.json';
