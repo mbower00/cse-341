@@ -8,12 +8,12 @@ const jadaRoute = (req, res) => {
     res.send("Jada Bower")
 }
 
-const jonasRoute = (req, res) => {
-    res.send("Jonas Bower")
+const mitchellRoute = (req, res) => {
+    res.send("Mitchell Bower")
 }
 
 module.exports = {
     alexRoute,
     jadaRoute,
-    jonasRoute
+    mitchellRoute
 }

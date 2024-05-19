@@ -31,9 +31,9 @@
         }
       }
     },
-    "/jonas": {
+    "/mitchell": {
       "get": {
-        "description": "Sends the name: Jonas Bower",
+        "description": "Sends the name: Mitchell Bower",
         "responses": {
           "200": {
             "description": "OK"

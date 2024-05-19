@@ -8,7 +8,7 @@ get http://localhost:3000/jada
 
 ###
 
-get http://localhost:3000/jonas
+get http://localhost:3000/mitchell
 
 ###
 
