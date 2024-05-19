@@ -12,7 +12,7 @@ addContactsRoutes(routes)
 
 // the next four lines are copied from (although I did change the route for "swaggerDocument" as well as changed to using the "routes" const) https://www.npmjs.com/package/swagger-ui-express
 const swaggerUi = require('swagger-ui-express');
-const swaggerDocument = require('../swagger-output.json');
+const swaggerDocument = require('../swagger.json');
 routes.use('/api-docs', swaggerUi.serve);
 routes.get('/api-docs', swaggerUi.setup(swaggerDocument));
 
