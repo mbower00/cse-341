@@ -4,6 +4,14 @@ get http://localhost:3000
 
 ###
 
+get http://localhost:3000/jada
+
+###
+
+get http://localhost:3000/jonas
+
+###
+
 get http://localhost:3000/contacts
 
 ###
@@ -16,7 +24,7 @@ get http://localhost:3000/contact?id=663449efad1fb75de083cb9c
 
 ###
 
-get http://localhost:3000/contact?id=663448c6ad1fb75de083cb9b
+get http://localhost:3000/contact?id=6649580297cd2cb4574918a4
 
 ###
 
@@ -53,7 +61,7 @@ Content-Type: application/json
 
 ###
 
-put http://localhost:3000/contacts/66401f25f1646df3d3426d07
+put http://localhost:3000/contacts/6649580297cd2cb4574918a4
 Content-Type: application/json
 
 {
@@ -62,7 +70,7 @@ Content-Type: application/json
 
 ###
 
-delete http://localhost:3000/delete-contact/66401f25f1646df3d3426d07
+delete http://localhost:3000/delete-contact/663449efad1fb75de083cb9c
 Content-Type: application/json
 
 ### 

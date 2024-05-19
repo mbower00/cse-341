@@ -1,0 +1,118 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Contacts",
+    "description": "This is a backend that connects to MongoDB where there is data on people.",
+    "version": "1.0.0"
+  },
+  "host": "localhost:3000",
+  "basePath": "/",
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "description": "Sends the name: Alex Bower",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/jada": {
+      "get": {
+        "description": "Sends the name: Jada Bower",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/jonas": {
+      "get": {
+        "description": "Sends the name: Jonas Bower",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/contacts": {
+      "get": {
+        "description": "Gets all of the contacts as a JSON list.",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/contact": {
+      "get": {
+        "description": "Gets a contacts as a JSON object, according to the passed id",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/post-contact": {
+      "post": {
+        "description": "Posts a new contacts according to the JSON data sent over. Gets the id of the newly created contact. (Note: you should allow the system to create an id).",
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        }
+      }
+    },
+    "/contacts/{mod}": {
+      "put": {
+        "description": "Puts data to a contact according to the passed id: {mod}",
+        "parameters": [
+          {
+            "name": "mod",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          }
+        }
+      }
+    },
+    "/delete-contact/{del}": {
+      "delete": {
+        "description": "Deletes a contact according the id: {del}. Gets a message.",
+        "parameters": [
+          {
+            "name": "del",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  }
+}
