@@ -13,7 +13,7 @@
   "paths": {
     "/": {
       "get": {
-        "description": "Sends the name: Alex Bower",
+        "description": "Gets the name: Alex Bower",
         "responses": {
           "200": {
             "description": "OK"
@@ -23,7 +23,7 @@
     },
     "/jada": {
       "get": {
-        "description": "Sends the name: Jada Bower",
+        "description": "Gets the name: Jada Bower",
         "responses": {
           "200": {
             "description": "OK"
@@ -33,7 +33,7 @@
     },
     "/mitchell": {
       "get": {
-        "description": "Sends the name: Mitchell Bower",
+        "description": "Gets the name: Mitchell Bower",
         "responses": {
           "200": {
             "description": "OK"
